@@ -1,0 +1,236 @@
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .container{
+            width: 100%;
+            max-width: 700px;
+            background-color: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 32px;
+        }
+
+        .form-group{
+            margin-bottom: 20px;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 8px;
+            font-size: 18px;
+            color: #444;
+            font-weight: bold;
+        }
+
+        input,
+        select{
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus,
+        select:focus{
+            border-color: #4facfe;
+            box-shadow: 0 0 10px rgba(79,172,254,0.5);
+        }
+
+        button{
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 12px;
+            background-color: #4facfe;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover{
+            background-color: #008cdd;
+        }
+
+        @media(max-width:600px){
+
+            .container{
+                padding: 20px;
+            }
+
+            h2{
+                font-size: 24px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form action="projects.html" method="get">
+
+            <h2>Student Registration</h2>
+
+            <div class="form-group">
+                <label for="omar">FULL NAME</label>
+                <input id="omar" type="text" placeholder="Enter the full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ali">USER EMAIL</label>
+                <input id="ali" type="email" placeholder="Enter the user email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mohamed">NATIONALITY</label>
+                <select id="mohamed">
+
+                    <option>-----</option>
+                    <option>اليمن</option>
+                    <option>السعوديه</option>
+                    <option>الامارات</option>
+                    <option>عمان</option>
+                    <option>الكويت</option>
+                    <option>قطر</option>
+                    <option>العراق</option>
+                    <option>لبنان</option>
+                    <option>تركيا</option>
+                    <option>فلسطين</option>
+                    <option>المغرب</option>
+                    <option>الجزائر</option>
+                    <option>امريكا</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="city">CITY</label>
+                <select id="city">
+
+                    <option>-----</option>
+                    <option>تعز</option>
+                    <option>مارب</option>
+                    <option>عدن</option>
+                    <option>لحج</option>
+                    <option>الضالع</option>
+                    <option>الحديدة</option>
+                    <option>صعده</option>
+                    <option>إب</option>
+                    <option>ذمار</option>
+                    <option>عمران</option>
+                    <option>صنعاء</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="asd">NUMBER PHONE</label>
+                <input type="number" id="asd" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="m">SEX</label>
+                <select id="m">
+
+                    <option>-----</option>
+                    <option>ذكر</option>
+                    <option>أنثى</option>
+                    <option>افضل عدم الذكر</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="r">DATE OF BIRTH</label>
+                <input type="date" id="r">
+            </div>
+
+            <div class="form-group">
+                <label for="birth">PLACE OF BIRTH</label>
+                <select id="birth">
+
+                    <option>-----</option>
+                    <option>اليمن</option>
+                    <option>السعوديه</option>
+                    <option>الامارات</option>
+                    <option>عمان</option>
+                    <option>الكويت</option>
+                    <option>قطر</option>
+                    <option>العراق</option>
+                    <option>لبنان</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dir">DIRECTORATE</label>
+                <select id="dir">
+
+                    <option>-----</option>
+                    <option>المسراخ</option>
+                    <option>المعافر</option>
+                    <option>جبل حبشي</option>
+                    <option>التعزية</option>
+                    <option>صالة</option>
+                    <option>المظفر</option>
+                    <option>المخاء</option>
+                    <option>الوازعية</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="rt">ADDRESS</label>
+                <input type="text" id="rt" placeholder="Enter your address" required>
+            </div>
+
+            <button type="submit">
+                حفظ والانتقال التالي
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

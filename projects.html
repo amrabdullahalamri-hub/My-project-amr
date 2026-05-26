@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects university</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .container{
+            width: 100%;
+            max-width: 700px;
+            background-color: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 32px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        label{
+            margin-bottom: 8px;
+            margin-top: 15px;
+            font-size: 18px;
+            color: #444;
+            font-weight: bold;
+        }
+
+        input,
+        select{
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus,
+        select:focus{
+            border-color: #4facfe;
+            box-shadow: 0 0 10px rgba(79,172,254,0.5);
+        }
+
+        button{
+            width: 100%;
+            padding: 15px;
+            margin-top: 25px;
+            border: none;
+            border-radius: 12px;
+            background-color: #4facfe;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover{
+            background-color: #008cdd;
+        }
+
+        @media(max-width:600px){
+
+            .container{
+                padding: 20px;
+            }
+
+            h1{
+                font-size: 24px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>بيانات الثانوية العامة</h1>
+
+        <form action="lab6.html" method="post">
+
+            <label for="mohamed">نوع الثانوية</label>
+
+            <select id="mohamed">
+
+                <option>-----</option>
+                <option>علمي</option>
+                <option>ادبي</option>
+                <option>وافد</option>
+
+            </select>
+
+            <label for="em">عام التخرج</label>
+
+            <input
+                type="text"
+                required
+                id="em"
+                placeholder="ادخل عام التخرج">
+
+            <label for="dh">معدل الثانوية</label>
+
+            <input
+                type="text"
+                required
+                id="dh"
+                placeholder="ادخل معدل الثانوية">
+
+            <label for="tyu">المدينة</label>
+
+            <select id="tyu">
+
+                <option>-----</option>
+                <option>تعز</option>
+                <option>مارب</option>
+                <option>عدن</option>
+                <option>لحج</option>
+                <option>الضالع</option>
+                <option>الحديدة</option>
+                <option>صعدة</option>
+                <option>إب</option>
+                <option>ذمار</option>
+                <option>عمران</option>
+                <option>صنعاء</option>
+                <option>أبين</option>
+                <option>الجوف</option>
+                <option>شبوة</option>
+
+            </select>
+
+            <label for="alu">اسم المدرسة</label>
+
+            <input
+                type="text"
+                id="alu"
+                required
+                placeholder="ادخل اسم المدرسة">
+
+            <label for="dd">رقم الجلوس</label>
+
+            <input
+                type="number"
+                id="dd"
+                required
+                placeholder="ادخل رقم الجلوس">
+
+            <label for="tyr">الدولة</label>
+
+            <select id="tyr">
+
+                <option>-----</option>
+                <option>اليمن</option>
+                <option>السعودية</option>
+                <option>الإمارات</option>
+                <option>عمان</option>
+                <option>الكويت</option>
+                <option>قطر</option>
+                <option>العراق</option>
+                <option>لبنان</option>
+                <option>تركيا</option>
+                <option>فلسطين</option>
+                <option>المغرب</option>
+                <option>الجزائر</option>
+                <option>أمريكا</option>
+
+            </select>
+
+            <label for="err">المديرية</label>
+
+            <select id="err">
+
+                <option>-----</option>
+                <option>المسراخ</option>
+                <option>المعافر</option>
+                <option>مشرعة وحدنان</option>
+                <option>جبل حبشي</option>
+                <option>التعزية</option>
+                <option>صالة</option>
+                <option>المظفر</option>
+                <option>الشمايتين</option>
+                <option>مقبنة</option>
+                <option>المخاء</option>
+                <option>الوازعية</option>
+                <option>الصلو</option>
+                <option>ذباب</option>
+                <option>صبر الموادم</option>
+                <option>شرعب السلام</option>
+                <option>شرعب الرونة</option>
+                <option>حيفان</option>
+                <option>سامع</option>
+                <option>ماوية</option>
+
+            </select>
+
+            <button type="submit">
+                حفظ والانتقال التالي
+            </button>
+
+        </form>
+
+    </div>
+
+
+   <script>
+
+    let form = document.querySelector("form");
+
+    form.addEventListener("submit", function(event){
+
+        event.preventDefault();
+
+        // أخذ البيانات
+
+        let secondaryType = document.getElementById("mohamed").value;
+
+        let graduationYear = document.getElementById("em").value;
+
+        let grade = document.getElementById("dh").value;
+
+        let city = document.getElementById("tyu").value;
+
+        let school = document.getElementById("alu").value;
+
+        let seatNumber = document.getElementById("dd").value;
+
+        let country = document.getElementById("tyr").value;
+
+        let directorate = document.getElementById("err").value;
+
+
+           
+        //تستخدم لفتح نافذة أو تبويب جديد
+        let newWindow = window.open("", "_blank");
+
+
+        // محتوى الصفحة الجديدة
+
+        newWindow.document.write(`
+
+        <html>
+
+        <head>
+
+            <title>بيانات الطالب</title>
+
+            <style>
+
+                body{
+
+                    font-family: Arial;
+                    background: linear-gradient(to right, #4facfe, #00f2fe);
+                    padding: 40px;
+                    direction: rtl;
+
+                }
+
+                .container{
+
+                    background-color: white;
+                    max-width: 700px;
+                    margin: auto;
+                    padding: 30px;
+                    border-radius: 20px;
+                    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+
+                }
+
+                h1{
+
+                    text-align: center;
+                    color: #333;
+                    margin-bottom: 30px;
+
+                }
+
+                .box{
+
+                    background-color: #f4f4f4;
+                    padding: 15px;
+                    margin-bottom: 15px;
+                    border-radius: 10px;
+                    font-size: 18px;
+
+                }
+
+                span{
+
+                    color: #008cdd;
+                    font-weight: bold;
+
+                }
+
+            </style>
+
+        </head>
+
+        <body>
+
+            <div class="container">
+
+                <h1>بيانات الطالب</h1>
+
+                <div class="box">
+                    <span>نوع الثانوية :</span>
+
+                    //تعرض قيمة المتغير داخل HTML
+                    ${secondaryType}
+                </div>
+
+                <div class="box">
+                    <span>عام التخرج :</span>
+                    ${graduationYear}
+                </div>
+
+                <div class="box">
+                    <span>معدل الثانوية :</span>
+                    ${grade}
+                </div>
+
+                <div class="box">
+                    <span>المدينة :</span>
+                    ${city}
+                </div>
+
+                <div class="box">
+                    <span>اسم المدرسة :</span>
+                    ${school}
+                </div>
+
+                <div class="box">
+                    <span>رقم الجلوس :</span>
+                    ${seatNumber}
+                </div>
+
+                <div class="box">
+                    <span>الدولة :</span>
+                    ${country}
+                </div>
+
+                <div class="box">
+                    <span>المديرية :</span>
+                    ${directorate}
+                </div>
+
+            </div>
+
+        </body>
+
+        </html>
+
+        `);
+
+    });
+
+</script>
+   
+   
+</body>
+
+</html>
